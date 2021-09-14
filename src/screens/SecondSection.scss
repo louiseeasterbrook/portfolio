@@ -1,0 +1,14 @@
+.second-container {
+  background-color: rgb(240, 240, 240);
+  width: 100%;
+  height: 100vh;
+}
+
+.card-holder {
+  padding: 5rem;
+  margin: auto;
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}

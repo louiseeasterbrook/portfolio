@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,iBAAiB,CAAC;EAChB,gBAAgB,EAAE,OAAkB;EACpC,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;CACd;;AAED,AAAA,YAAY,CAAC;EACX,OAAO,EAAE,IAAI;EACb,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,GAAG;EACV,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,cAAc;EACrC,GAAG,EAAE,IAAI;CACV",
+    "sources": [
+        "SecondSection.scss"
+    ],
+    "names": [],
+    "file": "SecondSection.css"
+}

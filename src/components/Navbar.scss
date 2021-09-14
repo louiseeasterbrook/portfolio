@@ -1,0 +1,53 @@
+.nav-outer {
+  width: 100%;
+  height: 10vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 9999;
+}
+
+.nav-inner {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  // background-color: aqua;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-title {
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 4px;
+  text-decoration: none;
+  color: black;
+}
+
+.page-title:hover {
+  transition: 0.2s;
+  color: rgb(40, 141, 86);
+}
+
+.title-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  // background-color: aqua;
+}
+
+.mouse-icon {
+  font-size: 25px;
+}
+
+.nav-links {
+  // background-color: hotpink;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+}

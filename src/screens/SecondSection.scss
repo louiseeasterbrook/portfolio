@@ -1,14 +1,28 @@
 .second-container {
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(243, 243, 243);
   width: 100%;
-  height: 100vh;
 }
 
 .card-holder {
   padding: 5rem;
   margin: auto;
   width: 60%;
+  max-width: 950px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 4rem;
+}
+
+@media (max-width: 1200px) {
+  .card-holder {
+    width: 75%;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .card-holder {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+  }
 }

@@ -1,6 +1,6 @@
 import "./WebsiteCard.css";
-// import { Link } from "react-router-dom";
-import ReactDOM from "react-dom";
+
+//font awesome imports
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
@@ -8,6 +8,10 @@ import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 const WebsiteCard = ({ webImage, webDescription, webName, languages }) => {
   return (
     <div className="card-container">
+      <div className="img-holder">
+        <img src={webImage} alt="img" className="card-image" />
+      </div>
+
       <h4>{webName}</h4>
       <div className="lang-holder">
         {languages.map((el, i) => (
@@ -18,8 +22,12 @@ const WebsiteCard = ({ webImage, webDescription, webName, languages }) => {
       </div>
       <p className="card-description">{webDescription}</p>
       <div className="cardBtn-holder">
-        <FontAwesomeIcon icon={faGithub} className="github-icon icon" />
-        <FontAwesomeIcon icon={faGlobe} className="globe-icon icon" />
+        <div className="github-icon icon-div">
+          <FontAwesomeIcon icon={faGithub} className=" icon" />
+        </div>
+        <div className="globe-icon icon-div">
+          <FontAwesomeIcon icon={faGlobe} className=" icon" />
+        </div>
       </div>
     </div>
   );

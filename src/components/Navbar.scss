@@ -12,9 +12,10 @@
   width: 80%;
   margin: auto;
   display: flex;
-  // background-color: aqua;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  // background-color: chartreuse;
 }
 
 .page-title {
@@ -50,4 +51,70 @@
 
 .nav-links a {
   text-decoration: none;
+}
+
+.nav-btn div {
+  width: 22px;
+  height: 3px;
+  margin: 4px;
+  border-radius: 8px;
+  background-color: rgb(0, 0, 0);
+}
+
+.nav-btn {
+  position: absolute;
+  cursor: pointer;
+  right: 0;
+  visibility: hidden;
+}
+
+.menu-holder {
+  position: absolute;
+  background-color: rgb(7, 7, 7);
+  opacity: 0.9;
+  width: 100vw;
+  height: 100vh;
+  top: 10vh;
+  left: 0;
+}
+
+.menu-inner {
+  position: relative;
+
+  height: 100%;
+  width: 100%;
+}
+
+.menu-holder ul {
+  position: absolute;
+  left: 48%;
+  top: 20%;
+  transform: translate(-50%, -20%);
+  margin: auto;
+
+  width: fit-content;
+}
+
+.menu-holder ul li {
+  list-style-type: none;
+  text-align: center;
+  list-style: none;
+  margin: 2rem;
+}
+
+.menu-holder ul li a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+@media (max-width: 600px) {
+  .nav-links {
+    display: none;
+  }
+  .nav-btn {
+    visibility: visible;
+  }
 }

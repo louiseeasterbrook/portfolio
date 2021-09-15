@@ -22,10 +22,23 @@ const WebsiteCard = ({ webImage, webDescription, webName, languages }) => {
       </div>
       <p className="card-description">{webDescription}</p>
       <div className="cardBtn-holder">
-        <div className="github-icon icon-div">
+        <div
+          className="github-icon icon-div"
+          onClick={() =>
+            window.open(
+              "https://github.com/louiseeasterbrook/poemWebsite/blob/master/src/components/Footer.js",
+              "_blank"
+            )
+          }
+        >
           <FontAwesomeIcon icon={faGithub} className=" icon" />
         </div>
-        <div className="globe-icon icon-div">
+        <div
+          className="globe-icon icon-div"
+          onClick={() =>
+            window.open("https://artwebsite.netlify.app/", "_blank")
+          }
+        >
           <FontAwesomeIcon icon={faGlobe} className=" icon" />
         </div>
       </div>

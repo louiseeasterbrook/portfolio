@@ -1,36 +1,53 @@
 import WebsiteCard from "../components/WebsiteCard";
 import "./SecondSection.css";
-import image3 from "../images/3.jpg";
-import image4 from "../images/4.jpg";
-import image5 from "../images/5.jpg";
+import bmWebsite from "../images/bmwebsite.jpg";
+import artWebsite from "../images/artwebsite.jpg";
+import countryWebsite from "../images/countrywebsite.jpg";
+import wcWebsite from "../images/wcwebsite.jpg";
 
 const SecondSection = () => {
   return (
     <div className="second-container">
       <div className="card-holder">
         <WebsiteCard
-          webImage={image5}
+          webImage={wcWebsite}
           webName="CRUD Website"
-          webDescription="Generate Lorem Ipsum placeholder text. Select the number of characters, words, sentences or paragraphs, and hit generate!"
-          languages={["React", "Express", "CSS3", "MongoDB", "Node.js"]}
+          webDescription="Poem posting website that gives all basic CRUD functionality. Each Poem can be 'up voted' and will display a count of their upvotes."
+          languages={["MongoDB", "Express", "React", "Node.js", "CSS3"]}
+          webLink="https://wordcollections2.herokuapp.com/"
+          codeLink="https://github.com/louiseeasterbrook/poemWebsite"
         />
         <WebsiteCard
-          webImage={image3}
-          webName="Website with User Authentication"
-          webDescription="Generate Lorem Ipsum placeholder text. Select the number of characters, words, sentences or paragraphs, and hit generate!"
-          languages={["React", "JavaScript", "CSS3"]}
+          webImage={artWebsite}
+          webName="Eccomerce Website"
+          webDescription="E-commerce website that uses redux to fetch data and handle the website state. "
+          languages={[
+            "MongoDB",
+            "Express",
+            "React",
+            "Node.js",
+            "Redux",
+            "CSS3",
+          ]}
+          webLink="https://carlaandfigart.herokuapp.com/"
+          codeLink="https://github.com/louiseeasterbrook/art-ecommerce"
+        />
+
+        <WebsiteCard
+          webImage={countryWebsite}
+          webName="API Fetching Website"
+          webDescription="Country Search allows users to search a country name and recieve back a card full of information on the specific country. The information displayed has been fetched from an API."
+          languages={["HTML5", "JavaScript", "Sass"]}
+          webLink="https://louise-countrysearch.netlify.app/"
+          codeLink="https://github.com/louiseeasterbrook/countrySearch"
         />
         <WebsiteCard
-          webImage={image3}
-          webName="Blue Mountains"
-          webDescription="Generate Lorem Ipsum placeholder text. Select the number of characters, words, sentences or paragraphs, and hit generate!"
+          webImage={bmWebsite}
+          webName="Basic Information Website"
+          webDescription="This website uses a variety of interactive website elements and an API generated map to present information on the Blue Mountains."
           languages={["HTML5", "JavaScript", "CSS3"]}
-        />
-        <WebsiteCard
-          webImage={image4}
-          webName="Front-End Eccommerce Site"
-          webDescription="Generate Lorem Ipsum placeholder text. Select the number of characters, words, sentences or paragraphs, and hit generate!"
-          languages={["Javascript", "HTML5", "Sass"]}
+          webLink="https://discoverbluemountains.netlify.app/"
+          codeLink="https://github.com/louiseeasterbrook/discoverBlueMountains"
         />
       </div>
     </div>

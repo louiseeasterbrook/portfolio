@@ -5,7 +5,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 
-const WebsiteCard = ({ webImage, webDescription, webName, languages }) => {
+const WebsiteCard = ({
+  webImage,
+  webDescription,
+  webName,
+  languages,
+  webLink,
+  codeLink,
+}) => {
   return (
     <div className="card-container">
       <div className="img-holder">
@@ -24,20 +31,13 @@ const WebsiteCard = ({ webImage, webDescription, webName, languages }) => {
       <div className="cardBtn-holder">
         <div
           className="github-icon icon-div"
-          onClick={() =>
-            window.open(
-              "https://github.com/louiseeasterbrook/poemWebsite/blob/master/src/components/Footer.js",
-              "_blank"
-            )
-          }
+          onClick={() => window.open(`${codeLink}`, "_blank")}
         >
           <FontAwesomeIcon icon={faGithub} className=" icon" />
         </div>
         <div
           className="globe-icon icon-div"
-          onClick={() =>
-            window.open("https://artwebsite.netlify.app/", "_blank")
-          }
+          onClick={() => window.open(`${webLink}`, "_blank")}
         >
           <FontAwesomeIcon icon={faGlobe} className=" icon" />
         </div>

@@ -1,12 +1,12 @@
 .second-container {
-  background-color: #f3f3f3;
+  margin-top: 3rem;
   width: 100%;
 }
 
 .card-holder {
   padding: 5rem;
   margin: auto;
-  width: 60%;
+  width: 75%;
   max-width: 950px;
   display: -ms-grid;
   display: grid;

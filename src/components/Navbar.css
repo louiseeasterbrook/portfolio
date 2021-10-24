@@ -1,6 +1,7 @@
 .nav-outer {
   width: 100%;
   height: 10vh;
+  min-height: 80px;
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9,7 +10,7 @@
       -ms-flex-align: center;
           align-items: center;
   position: fixed;
-  z-index: 9999;
+  z-index: 100;
 }
 
 .nav-inner {
@@ -27,18 +28,43 @@
   position: relative;
 }
 
+.title-words {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0;
+  margin-left: 1rem;
+}
+
+.title-words:hover a {
+  cursor: pointer;
+  color: #288d56;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.title-words:hover p {
+  cursor: pointer;
+  color: #288d56;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.title-words > p {
+  margin: 0;
+  font-weight: 200;
+}
+
 .page-title {
   font-size: 20px;
-  font-weight: 200;
+  font-weight: 600;
   letter-spacing: 4px;
   text-decoration: none;
   color: black;
-}
-
-.page-title:hover {
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  color: #288d56;
 }
 
 .title-section {
@@ -49,10 +75,6 @@
       -ms-flex-align: center;
           align-items: center;
   gap: 1rem;
-}
-
-.mouse-icon {
-  font-size: 25px;
 }
 
 .nav-links {
@@ -67,6 +89,13 @@
 
 .nav-links a {
   text-decoration: none;
+  color: black;
+}
+
+.nav-links a:hover {
+  color: #288d56;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .nav-btn div {
@@ -84,13 +113,17 @@
   visibility: hidden;
 }
 
+.laptop-icon {
+  font-size: 25px;
+}
+
 .menu-holder {
   position: absolute;
   background-color: #070707;
   opacity: 0.9;
   width: 100vw;
   height: 100vh;
-  top: 10vh;
+  top: 80px;
   left: 0;
 }
 

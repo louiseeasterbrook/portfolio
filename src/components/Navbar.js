@@ -1,15 +1,11 @@
 import "./Navbar.css";
-// import { Link } from "react-router-dom";
-// import ReactDOM from "react-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMouse } from "@fortawesome/free-solid-svg-icons";
+import { faLaptop } from "@fortawesome/free-solid-svg-icons";
 import { useState, useEffect } from "react";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-  // console.log(toggleMenu);
-  // console.log(screenWidth);
 
   const navToggle = () => {
     setToggleMenu(!toggleMenu);
@@ -31,15 +27,23 @@ const Navbar = () => {
     <div className="nav-outer">
       <div className="nav-inner">
         <div className="title-section">
-          <FontAwesomeIcon icon={faMouse} className="mouse-icon" />
-          <a href="" className="page-title">
-            Louise Easterbrook
-          </a>
+          <FontAwesomeIcon icon={faLaptop} className="laptop-icon" />
+
+          <div className="title-words">
+            <a href="" className="page-title">
+              Louise Easterbrook
+            </a>
+            <p>Full Stack Web Developer</p>
+          </div>
         </div>
 
         <div className="nav-links">
-          <a href="">Resume</a>
-          <a href="">Github</a>
+          <a href="" target="_blank">
+            Resume
+          </a>
+          <a href="https://github.com/louiseeasterbrook" target="_blank">
+            Github
+          </a>
         </div>
         <div className="nav-btn" onClick={navToggle}>
           <div></div>

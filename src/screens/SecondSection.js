@@ -12,7 +12,7 @@ const SecondSection = () => {
         <WebsiteCard
           webImage={wcWebsite}
           webName="CRUD Website"
-          webDescription="Poem posting website that gives all basic CRUD functionality. Each Poem can be 'up voted' and will display a count of their upvotes."
+          webDescription="Full Stack Poem posting website that gives all basic CRUD functionality. Each Poem can be 'up voted' and will display a count of their upvotes."
           languages={["MongoDB", "Express", "React", "Node.js", "CSS3"]}
           webLink="https://wordcollections2.herokuapp.com/"
           codeLink="https://github.com/louiseeasterbrook/poemWebsite"
@@ -20,7 +20,7 @@ const SecondSection = () => {
         <WebsiteCard
           webImage={artWebsite}
           webName="Eccomerce Website"
-          webDescription="E-commerce website that uses redux to fetch data and handle the website state. "
+          webDescription="E-commerce website is a full stack website that utilises redux to fetch data and handle the website state. "
           languages={[
             "MongoDB",
             "Express",
@@ -44,7 +44,7 @@ const SecondSection = () => {
         <WebsiteCard
           webImage={bmWebsite}
           webName="Basic Information Website"
-          webDescription="This website uses a variety of interactive website elements and an API generated map to present information on the Blue Mountains."
+          webDescription="This front-end website uses a variety of interactive website elements and an API generated map to present information on the Blue Mountains."
           languages={["HTML5", "JavaScript", "CSS3"]}
           webLink="https://discoverbluemountains.netlify.app/"
           codeLink="https://github.com/louiseeasterbrook/discoverBlueMountains"

@@ -11,6 +11,7 @@
           align-items: center;
   position: fixed;
   z-index: 100;
+  opacity: 0.95;
 }
 
 .nav-inner {

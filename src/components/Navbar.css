@@ -168,5 +168,12 @@
   .nav-btn {
     visibility: visible;
   }
+  .page-title {
+    font-size: 14px;
+    letter-spacing: 3px;
+  }
+  .title-words {
+    margin-left: 0;
+  }
 }
 /*# sourceMappingURL=Navbar.css.map */

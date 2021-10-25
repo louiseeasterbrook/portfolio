@@ -106,3 +106,15 @@
 .card-image {
   width: 100%;
 }
+
+@media (max-width: 800px) {
+  .img-holder {
+    margin: auto;
+    width: 100%;
+    height: fit-content;
+    max-height: 40%;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgba(161, 161, 161, 0.2);
+  }
+}

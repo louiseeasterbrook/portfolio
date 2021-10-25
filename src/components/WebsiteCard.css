@@ -130,4 +130,19 @@
 .card-image {
   width: 100%;
 }
+
+@media (max-width: 800px) {
+  .img-holder {
+    margin: auto;
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    max-height: 40%;
+    overflow: hidden;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 1px 10px rgba(161, 161, 161, 0.2);
+            box-shadow: 1px 1px 10px rgba(161, 161, 161, 0.2);
+  }
+}
 /*# sourceMappingURL=WebsiteCard.css.map */

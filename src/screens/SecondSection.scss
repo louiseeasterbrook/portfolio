@@ -4,7 +4,6 @@
 }
 
 .card-holder {
-  padding: 5rem;
   margin: auto;
   width: 75%;
   max-width: 950px;
@@ -20,7 +19,7 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   .card-holder {
     grid-template-columns: 1fr;
     max-width: 480px;

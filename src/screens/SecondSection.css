@@ -22,19 +22,19 @@
           animation: card-pop 1.3s 0.5s forwards;
 }
 
-.card-holder > :nth-child(1) {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+.card-holder > :nth-child(2) {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
 }
 
 .card-holder > :nth-child(3) {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 1.3s;
 }
 
 .card-holder > :nth-child(4) {
-  -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s;
+  -webkit-animation-delay: 1.7s;
+          animation-delay: 1.7s;
 }
 
 @-webkit-keyframes card-pop {

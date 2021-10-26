@@ -12,7 +12,7 @@ const SecondSection = () => {
         <WebsiteCard
           webImage={wcWebsite}
           webName="CRUD Website"
-          webDescription="Full Stack Poem posting website that gives all basic CRUD functionality. Each Poem can be 'up voted' and will display a count of their upvotes."
+          webDescription="Full-stack poem posting website that gives all basic CRUD functionality. Each Poem can be 'up voted' and will display a count of their upvotes."
           languages={["MongoDB", "Express", "React", "Node.js", "CSS3"]}
           webLink="https://wordcollections2.herokuapp.com/"
           codeLink="https://github.com/louiseeasterbrook/poemWebsite"

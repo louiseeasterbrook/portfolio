@@ -19,8 +19,8 @@ const SecondSection = () => {
         />
         <WebsiteCard
           webImage={artWebsite}
-          webName="Eccomerce Website"
-          webDescription="E-commerce website is a full stack website that utilises redux to fetch data and handle the website state. "
+          webName="E-commerce Website"
+          webDescription="Full-stack E-commerce website that utilises redux to fetch data and handle the website state. "
           languages={[
             "MongoDB",
             "Express",

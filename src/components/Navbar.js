@@ -38,10 +38,14 @@ const Navbar = () => {
         </div>
 
         <div className="nav-links">
-          <a href="" target="_blank">
+          {/* <a href="../uploads/resume.pdf" target="_blank" rel="noreferrer">
             Resume
-          </a>
-          <a href="https://github.com/louiseeasterbrook" target="_blank">
+          </a> */}
+          <a
+            href="https://github.com/louiseeasterbrook"
+            target="_blank"
+            rel="noreferrer"
+          >
             Github
           </a>
         </div>
@@ -57,12 +61,15 @@ const Navbar = () => {
           <div className="menu-inner">
             <ul>
               <li>
-                <a href="" className="menu-link">
+                <a href="../uploads/resume.pdf" className="menu-link">
                   Resume
                 </a>
               </li>
               <li>
-                <a href="" className="menu-link">
+                <a
+                  href="https://github.com/louiseeasterbrook"
+                  className="menu-link"
+                >
                   Github
                 </a>
               </li>

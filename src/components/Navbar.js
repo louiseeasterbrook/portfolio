@@ -60,11 +60,11 @@ const Navbar = () => {
         <div className="menu-holder">
           <div className="menu-inner">
             <ul>
-              <li>
+              {/* <li>
                 <a href="../uploads/resume.pdf" className="menu-link">
                   Resume
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a
                   href="https://github.com/louiseeasterbrook"

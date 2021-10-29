@@ -43,7 +43,7 @@ const SecondSection = () => {
         />
         <WebsiteCard
           webImage={bmWebsite}
-          webName="Basic Information Website"
+          webName="Information Website"
           webDescription="This front-end website uses a variety of interactive website elements and an API generated map to present information on the Blue Mountains."
           languages={["HTML5", "JavaScript", "CSS3"]}
           webLink="https://discoverbluemountains.netlify.app/"

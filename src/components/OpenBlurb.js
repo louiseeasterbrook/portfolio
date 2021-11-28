@@ -1,15 +1,16 @@
 import "./OpenBlurb.css";
 
+//font awesome imports
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
 
 const OpenBlurb = ({ projectsRef }) => {
+  //function to trigger auto scroll to projects
   const goToProjects = () => {
     projectsRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
+  //function to open resume link
   const openResume = (e) => {
     e.preventDefault();
     window.open(
@@ -43,15 +44,6 @@ const OpenBlurb = ({ projectsRef }) => {
               )
             }
           />
-          {/* <FontAwesomeIcon
-            icon={faEnvelope}
-            className="fb-icon icon"
-            onClick={() =>
-              window.open(
-                "mailto:email@example.com?subject=Subject&body=Body%20goes%20here"
-              )
-            }
-          /> */}
         </div>
       </div>
       <div className="divider" />

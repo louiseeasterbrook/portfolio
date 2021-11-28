@@ -1,0 +1,222 @@
+.blurb-container {
+  width: 55rem;
+  border-radius: 5px;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+
+.left-blurb {
+  opacity: 0;
+}
+
+.right-blurb {
+  opacity: 0;
+}
+
+.left-blurb {
+  -webkit-animation: fade-left 0.8s 3.8s forwards;
+          animation: fade-left 0.8s 3.8s forwards;
+  -webkit-transform: translatex(-1rem);
+          transform: translatex(-1rem);
+}
+
+.right-blurb {
+  -webkit-animation: fade-right 0.8s 5.3s forwards;
+          animation: fade-right 0.8s 5.3s forwards;
+  -webkit-transform: translatex(1rem);
+          transform: translatex(1rem);
+}
+
+@-webkit-keyframes fade-left {
+  0% {
+    opacity: 0;
+    -webkit-transform: translatex(-1rem);
+            transform: translatex(-1rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translatex(0rem);
+            transform: translatex(0rem);
+  }
+}
+
+@keyframes fade-left {
+  0% {
+    opacity: 0;
+    -webkit-transform: translatex(-1rem);
+            transform: translatex(-1rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translatex(0rem);
+            transform: translatex(0rem);
+  }
+}
+
+@-webkit-keyframes fade-right {
+  0% {
+    opacity: 0;
+    -webkit-transform: translatex(1rem);
+            transform: translatex(1rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translatex(0rem);
+            transform: translatex(0rem);
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    opacity: 0;
+    -webkit-transform: translatex(1rem);
+            transform: translatex(1rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translatex(0rem);
+            transform: translatex(0rem);
+  }
+}
+
+.left-blurb > .name > h1 {
+  font-weight: 300;
+  font-size: 4rem;
+  text-align: right;
+  margin: 0.2rem;
+}
+
+.social-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  gap: 1rem;
+  height: 4rem;
+  width: 100%;
+}
+
+.divider {
+  height: 0rem;
+  border-left: 3px solid #7adaeb;
+  -webkit-animation: line-grow 0.8s 4.5s forwards;
+          animation: line-grow 0.8s 4.5s forwards;
+}
+
+@-webkit-keyframes line-grow {
+  0% {
+    height: 0rem;
+  }
+  100% {
+    height: 15rem;
+  }
+}
+
+@keyframes line-grow {
+  0% {
+    height: 0rem;
+  }
+  100% {
+    height: 15rem;
+  }
+}
+
+.subtitle {
+  color: #7adaeb;
+}
+
+.btn-holder {
+  height: 30px;
+  width: 100%;
+}
+
+.main-btn {
+  width: 40%;
+  min-width: 10rem;
+  margin: 1rem 0;
+  margin-right: 1rem;
+  height: 2rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  -webkit-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.8);
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.8);
+  -webkit-transform: translateY(0.2rem);
+          transform: translateY(0.2rem);
+}
+
+.main-btn:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.8);
+          box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.8);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.icon {
+  font-size: 1.5rem;
+  margin: 1rem;
+  color: #7adaeb;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.port-btn {
+  color: #272727;
+  background-color: #7adaeb;
+}
+
+.res-btn {
+  color: #7adaeb;
+  background-color: #272727;
+  border: #7adaeb solid 3px;
+}
+
+@media (max-width: 1000px) {
+  .blurb-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 80%;
+    max-width: 500px;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .left-blurb > .name > h1 {
+    font-size: 4rem;
+    text-align: center;
+    margin: 0.2rem;
+  }
+  .divider {
+    height: 0rem;
+    border-left: none;
+    -webkit-animation: none;
+            animation: none;
+  }
+  .social-holder {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.intro {
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+/*# sourceMappingURL=OpenBlurb.css.map */

@@ -1,0 +1,161 @@
+.blurb-container {
+  width: 55rem;
+  border-radius: 5px;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 2rem;
+}
+
+.left-blurb {
+  opacity: 0;
+}
+
+.right-blurb {
+  opacity: 0;
+}
+
+.left-blurb {
+  animation: fade-left 0.8s 3.8s forwards;
+  transform: translatex(-1rem);
+}
+
+.right-blurb {
+  animation: fade-right 0.8s 5.3s forwards;
+  transform: translatex(1rem);
+}
+
+@keyframes fade-left {
+  0% {
+    opacity: 0;
+    transform: translatex(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translatex(0rem);
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    opacity: 0;
+    transform: translatex(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translatex(0rem);
+  }
+}
+
+.left-blurb > .name > h1 {
+  font-weight: 300;
+  font-size: 4rem;
+  text-align: right;
+  margin: 0.2rem;
+}
+
+.social-holder {
+  display: flex;
+  justify-content: right;
+  gap: 1rem;
+  height: 4rem;
+  width: 100%;
+}
+
+.divider {
+  height: 0rem;
+  border-left: 3px solid #7adaeb;
+  animation: line-grow 0.8s 4.5s forwards;
+}
+
+@keyframes line-grow {
+  0% {
+    height: 0rem;
+  }
+  100% {
+    height: 15rem;
+  }
+}
+
+.subtitle {
+  color: #7adaeb;
+}
+
+.btn-holder {
+  height: 30px;
+  width: 100%;
+}
+
+.main-btn {
+  width: 40%;
+  min-width: 10rem;
+  margin: 1rem 0;
+  margin-right: 1rem;
+  height: 2rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.8);
+  transform: translateY(0.2rem);
+}
+
+.main-btn:hover {
+  transition: 0.3s;
+  box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.8);
+  transform: translateY(0);
+}
+
+.icon {
+  font-size: 1.5rem;
+  margin: 1rem;
+  color: #7adaeb;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.port-btn {
+  color: rgb(39, 39, 39);
+  background-color: #7adaeb;
+}
+
+.res-btn {
+  color: #7adaeb;
+  background-color: rgb(39, 39, 39);
+  border: #7adaeb solid 3px;
+}
+
+@media (max-width: 1000px) {
+  .blurb-container {
+    flex-direction: column;
+    width: 80%;
+    max-width: 500px;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .left-blurb > .name > h1 {
+    font-size: 4rem;
+    text-align: center;
+    margin: 0.2rem;
+  }
+
+  .divider {
+    height: 0rem;
+    border-left: none;
+    animation: none;
+  }
+
+  .social-holder {
+    justify-content: center;
+  }
+}
+
+.intro {
+  font-weight: 500;
+  line-height: 1.5rem;
+}

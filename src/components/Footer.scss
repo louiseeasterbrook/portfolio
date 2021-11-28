@@ -1,0 +1,19 @@
+.footer-container {
+  // background-color: #7adaeb;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 5rem;
+}
+
+.footer-container > p {
+  color: white;
+  font-size: 13px;
+}
+
+.laptop-icon {
+  color: white;
+  font-size: 13px;
+}

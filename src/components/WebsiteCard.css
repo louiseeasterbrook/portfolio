@@ -1,46 +1,54 @@
 .card-container {
-  background-color: #f0f0f0;
-  -webkit-box-shadow: 1px 1px 10px rgba(150, 150, 150, 0.3);
-          box-shadow: 1px 1px 10px rgba(150, 150, 150, 0.3);
-  padding: 2rem;
-  border-radius: 10px;
-  position: relative;
-}
-
-.card-container h4 {
-  text-align: center;
-  font-size: 25px;
-  margin: 0.5rem;
-  margin-top: 2rem;
-}
-
-.card-container .card-description {
-  margin: auto;
-  width: 85%;
-  line-height: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  margin: 5rem 0;
   padding: 1rem;
+}
+
+.img-holder {
+  width: 50%;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.8);
+          box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.8);
+  background-color: white;
+}
+
+.img-holder > img {
+  width: 100%;
+}
+
+.text-holder {
+  width: 50%;
+}
+
+.text-holder > h4 {
+  font-size: 1.5rem;
+  margin: 0;
+  margin-bottom: 0.5rem;
+  float: left;
 }
 
 .lang-holder {
-  margin: auto;
-  padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 90%;
+  width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 .lang-display {
-  background-color: #288d56;
-  color: white;
+  -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.8);
+          box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.8);
+  background-color: #7adaeb;
+  color: #222222;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -50,94 +58,42 @@
   border-radius: 5px;
 }
 
-.cardBtn-holder {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  float: right;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 1rem;
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
-}
-
-.icon {
-  font-size: 22px;
+.cardBtn-holder > button {
+  width: 40%;
+  margin: 1rem;
+  outline: none;
+  height: 2rem;
   cursor: pointer;
-  margin: 0.8rem 0.7rem;
 }
 
-.cardBtn-holder div {
-  position: relative;
-  width: 22px;
-  height: 22px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: none;
-}
-
-.cardBtn-holder .github-icon:hover::after {
-  content: "View website code";
-  width: 140px;
-}
-
-.cardBtn-holder .globe-icon:hover::after {
-  content: "View live website";
-  width: 140px;
-}
-
-.cardBtn-holder .icon-div:hover::after {
-  z-index: 9999;
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0.7);
-  top: 30px;
-  left: -30px;
-  -webkit-box-shadow: 1px 1px 10px rgba(150, 150, 150, 0.3);
-          box-shadow: 1px 1px 10px rgba(150, 150, 150, 0.3);
-  text-align: center;
-  line-height: 25px;
-  border-radius: 5px;
-}
-
-.img-holder {
-  margin: auto;
-  width: 85%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  max-height: 40%;
-  overflow: hidden;
-  border-radius: 5px;
-  -webkit-box-shadow: 1px 1px 10px rgba(161, 161, 161, 0.2);
-          box-shadow: 1px 1px 10px rgba(161, 161, 161, 0.2);
-}
-
-.card-image {
-  width: 100%;
-}
-
-@media (max-width: 800px) {
-  .img-holder {
-    margin: auto;
-    width: 100%;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    max-height: 40%;
-    overflow: hidden;
-    border-radius: 5px;
-    -webkit-box-shadow: 1px 1px 10px rgba(161, 161, 161, 0.2);
-            box-shadow: 1px 1px 10px rgba(161, 161, 161, 0.2);
+@media (max-width: 900px) {
+  .card-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
   }
+  .img-holder {
+    width: 100%;
+  }
+  .text-holder {
+    width: 100%;
+  }
+  .text-holder > h4 {
+    float: none;
+    text-align: center;
+  }
+  .lang-holder {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.res-btn {
+  color: #7adaeb;
+  background-color: #1f1f1f;
+  border: #7adaeb solid 3px;
 }
 /*# sourceMappingURL=WebsiteCard.css.map */

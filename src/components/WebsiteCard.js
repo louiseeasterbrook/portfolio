@@ -1,10 +1,5 @@
 import "./WebsiteCard.css";
 
-//font awesome imports
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faGlobe } from "@fortawesome/free-solid-svg-icons";
-
 const WebsiteCard = ({
   webImage,
   webDescription,
@@ -19,27 +14,30 @@ const WebsiteCard = ({
         <img src={webImage} alt="img" className="card-image" />
       </div>
 
-      <h4>{webName}</h4>
-      <div className="lang-holder">
-        {languages.map((el, i) => (
-          <p className="lang-display" key={i}>
-            {el}
-          </p>
-        ))}
-      </div>
-      <p className="card-description">{webDescription}</p>
-      <div className="cardBtn-holder">
-        <div
-          className="github-icon icon-div"
-          onClick={() => window.open(`${codeLink}`, "_blank")}
-        >
-          <FontAwesomeIcon icon={faGithub} className=" icon" />
+      <div className="text-holder">
+        <h4> {webName}</h4>
+        <div className="lang-holder">
+          {languages.map((el, i) => (
+            <p className="lang-display" key={i}>
+              {el}
+            </p>
+          ))}
         </div>
-        <div
-          className="globe-icon icon-div"
-          onClick={() => window.open(`${webLink}`, "_blank")}
-        >
-          <FontAwesomeIcon icon={faGlobe} className=" icon" />
+
+        <p className="card-description">{webDescription}</p>
+        <div className="cardBtn-holder">
+          <button
+            className="main-btn port-btn"
+            onClick={() => window.open(`${webLink}`, "_blank")}
+          >
+            Live Website
+          </button>
+          <button
+            className="main-btn res-btn"
+            onClick={() => window.open(`${codeLink}`, "_blank")}
+          >
+            Code
+          </button>
         </div>
       </div>
     </div>

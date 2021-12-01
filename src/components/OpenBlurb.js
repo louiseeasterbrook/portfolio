@@ -14,7 +14,7 @@ const OpenBlurb = ({ projectsRef }) => {
   const openResume = (e) => {
     e.preventDefault();
     window.open(
-      "https://github.com/louiseeasterbrook/portfolio/blob/master/resume.pdf"
+      "https://github.com/louiseeasterbrook/portfolio/blob/master/Resumecopy.pdf"
     );
   };
 

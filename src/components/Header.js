@@ -17,7 +17,7 @@ const Header = () => {
           </a>
 
           <a
-            href="https://github.com/louiseeasterbrook/portfolio/blob/master/resume.pdf"
+            href="https://github.com/louiseeasterbrook/portfolio/blob/master/Resumecopy.pdf"
             target="_blank"
           >
             Resume

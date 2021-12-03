@@ -17,14 +17,6 @@ const SecondSection = ({ projectsRef }) => {
 
         <div className="card-holder">
           <WebsiteCard
-            webImage={wcWebsite}
-            webName="CRUD Website"
-            webDescription="Full-stack poem sharing website that provides all basic CRUD functionality. Each Poem can be 'up voted' and will display a count of their votes. Posts made to this website will only be accepted on the server-side if the post is accompanied by a speicifc authorisation header"
-            languages={["MongoDB", "Express", "React", "Node.js", "CSS3"]}
-            webLink="https://wordcollections2.herokuapp.com/"
-            codeLink="https://github.com/louiseeasterbrook/poemWebsite"
-          />
-          <WebsiteCard
             webImage={artWebsite}
             webName="E-commerce Website"
             webDescription="Full-stack E-commerce website that utilises redux to fetch data and handle the website state. "
@@ -38,6 +30,21 @@ const SecondSection = ({ projectsRef }) => {
             ]}
             webLink="https://carlaandfigart.herokuapp.com/"
             codeLink="https://github.com/louiseeasterbrook/art-ecommerce"
+          />
+          <WebsiteCard
+            webImage={wcWebsite}
+            webName="CRUD Website"
+            webDescription="Full-stack poem sharing website that provides all basic CRUD functionality. Each Poem can be 'up voted' and will display a count of their votes. Posts made to this website will only be accepted on the server-side if the post is accompanied by a speicifc authorisation header"
+            languages={[
+              "MongoDB",
+              "Express",
+              "React",
+              "Node.js",
+              "CSS3",
+              "Material-UI",
+            ]}
+            webLink="https://wordcollections2.herokuapp.com/"
+            codeLink="https://github.com/louiseeasterbrook/poemWebsite"
           />
           <WebsiteCard
             webImage={bmWebsite}

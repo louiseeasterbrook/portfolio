@@ -9,10 +9,7 @@ const Header = () => {
         </div>
 
         <div className="nav-links">
-          <a
-            href="https://github.com/louiseeasterbrook/portfolio"
-            target="_blank"
-          >
+          <a href="https://github.com/louiseeasterbrook/" target="_blank">
             Github
           </a>
 

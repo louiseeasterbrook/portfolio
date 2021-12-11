@@ -34,14 +34,14 @@ const SecondSection = ({ projectsRef }) => {
           <WebsiteCard
             webImage={wcWebsite}
             webName="CRUD Website"
-            webDescription="Full-stack poem sharing website that provides all basic CRUD functionality. Each Poem can be 'up voted' and will display a count of their votes. Posts made to this website will only be accepted on the server-side if the post is accompanied by a speicifc authorisation header"
+            webDescription="Full-stack poem sharing website that provides all basic CRUD functionality. Each Poem can be 'up voted' and will display a count of their votes. To add a poem to this website a user must login using Auth0 and posts will only be accepted on the server-side if the post is accompanied by a speicifc authorisation header."
             languages={[
               "MongoDB",
               "Express",
               "React",
               "Node.js",
               "CSS3",
-              "Material-UI",
+              "Auth0",
             ]}
             webLink="https://wordcollections2.herokuapp.com/"
             codeLink="https://github.com/louiseeasterbrook/poemWebsite"
